@@ -31,7 +31,10 @@ h3{
     text-align: center;
 }
 
-#img-list{
-    width: 5em;
-    height: 8em;
+.img-list{
+    width: 10em;
+    height: 10em;
+}
+#mainMinions{
+    color: white;
 }
