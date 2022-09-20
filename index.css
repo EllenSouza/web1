@@ -1,0 +1,16 @@
+.header{
+    background-color: #054f77;
+    color:beige ;
+    padding: 1em;
+
+}
+.header a{
+    color: beige;
+}
+.header h1{
+    display: flex;
+    justify-content: center;
+}
+#content{
+    padding: 1em;
+}
