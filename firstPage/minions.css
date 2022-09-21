@@ -1,3 +1,9 @@
+body{
+    width: 100%;
+}
+h3{
+    text-align: center;
+}
 #header{
     display: flex;
     justify-content: space-between;
@@ -22,36 +28,55 @@
 
 }
 
+.session1{
+    background-color: #467fa8;
+    color: white;
+
+}
 .box{
     display: flex;
     justify-content: space-around;
-    background-color: #467fa8;
-    padding: 2em;
-    
-    color: white
+    padding: 2em;  
+}
+.box1{
+    display: block;
+    justify-content: center;
 }
 
-table{
-    width: 50%;
-    padding-top: 3em;
-}
-h3{
-    text-align: center;
-}
-
-ol{
-    line-height: 2.0;
-}
-.img-list{
-    width: 10em;
-    height: 10em;
-}
 #main-minions{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    
+    
+}
+
+#table-minions{
     color: white;
     text-align: center;
     margin-top: 2em;
    
 }
+.img-list{
+    width: 10em;
+    height: 10em;
+}
+
+table{
+    width: 60%;
+    padding-top: 3em;
+}
+
+.session2{
+    background-color: gray;
+    color: beige;
+    padding: 2em
+}
+ol{
+    line-height: 2.0;
+}
+
 .session3{
     padding: 2em;
     display: flex;
@@ -65,19 +90,8 @@ ol{
     align-items: center;
  
 }
-#final-session{
+.final-session{
     padding: 2em;
 }
-.box1{
 
-    display: block;
-    justify-content: center;
-}
-#session2{
-    background-color: gray;
-    color: beige;
-    padding: 2em
-}
-body{
-    width: 100%;
-}
+
