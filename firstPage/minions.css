@@ -1,6 +1,4 @@
-body{
-    width: 100%;
-}
+
 h3{
     text-align: center;
 }
@@ -31,6 +29,7 @@ h3{
 .session1{
     background-color: #467fa8;
     color: white;
+    width: 100%;
 
 }
 .box{
@@ -71,7 +70,9 @@ table{
 .session2{
     background-color: gray;
     color: beige;
-    padding: 2em
+    padding: 2em;
+    width: 100%;
+
 }
 ol{
     line-height: 2.0;
@@ -81,6 +82,8 @@ ol{
     padding: 2em;
     display: flex;
     justify-content: space-between;
+    width: 100%;
+
     
 }
 .boxleft, .boxright{
@@ -92,6 +95,8 @@ ol{
 }
 .final-session{
     padding: 2em;
+    width: 100%;
+
 }
 
 
