@@ -20,7 +20,7 @@ div2.id = "explanationText"
 body.appendChild(div2)
 
 let p = document.createElement("p")
-p.textContent = "This is a small application of DOM manipulation using JavaScript. When you click on any of minions images, it disappears and to make it appear again: CTRL+ESC"
+p.textContent = "This is a small application of DOM manipulation using JavaScript. When you click on any of minions images, it disappears and to make it appear again: CTRL + m"
 p.style.textAlign ="justify"
 div2.appendChild(p)
 
@@ -106,9 +106,9 @@ img4.onclick = function (){
 }
 
 
-//make all circles visible again 
+//make all minions visible again 
 window.onkeydown = function (event){
-    if (event.ctrlKey && event.key == "Escape"){
+    if (event.ctrlKey && event.key == "m"){
         img1.style.display = "block"
         img2.style.display = "block"
         img3.style.display = "block"
