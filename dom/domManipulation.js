@@ -24,12 +24,42 @@ p.textContent = "This is a small application of DOM manipulation using JavaScrip
 p.style.textAlign ="justify"
 div2.appendChild(p)
 
+//button to add more minions in the screen
+
+let button = document.createElement("button")
+button.setAttribute("id", "addMinions")
+button.textContent = "ADD Minion"
+body.appendChild(button)
+button.setAttribute("onclick", "addImg()")
+
+var cont=0;
+function addImg (){
+    let minionImage = document.createElement("img")
+    minionImage.setAttribute("src", "../dom/img/evil-minions.jpg")
+    minionImage.setAttribute("alt" , "evil-minion")
+    minionImage.style.height = "7em"
+    minionImage.style.width = "7em"
+    minionImage.style.borderRadius = "45%"
+    minionImage.style.marginRight = "2.5em"
+    minionImage.style.marginLeft = "2.5em"
+
+    minionImage.id = `evilMinion${cont}`
+    cont++
+    body.appendChild(minionImage)
+
+    minionImage.onclick = function(){
+        minionImage.style.display = "none"
+    }
+
+}
+
+
+
 //images
 div3 = document.createElement("div")
 div3.id = "Minions images"
 body.appendChild(div3)
 
-//ToDo: create a button to add more minions in the screen
 
 //figure1
 figure = document.createElement("figure")
@@ -106,6 +136,7 @@ img4.onclick = function (){
 }
 
 
+
 //make all minions visible again 
 window.onkeydown = function (event){
     if (event.ctrlKey && event.key == "m"){
@@ -113,6 +144,5 @@ window.onkeydown = function (event){
         img2.style.display = "block"
         img3.style.display = "block"
         img4.style.display = "block"
-
     }
 }
