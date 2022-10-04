@@ -26,6 +26,7 @@ function addMainMinions (idImg, pathImg){
     img.setAttribute("src", pathImg)
     img.setAttribute("id", idImg)
     img.setAttribute("alt", `${idImg}'s face` )
+    img.setAttribute("title", idImg)
     styleImg(img)
     figure.appendChild(img)
     div3.appendChild(figure)
