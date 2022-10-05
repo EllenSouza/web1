@@ -100,6 +100,8 @@ let button = document.createElement("button")
 button.setAttribute("id", "addMinions")
 button.textContent = "Add Minion"
 button.setAttribute("onclick", "addImg()")
+button.style.height = "3em"
+button.style.width = "10em"
 
 body.appendChild(button)
 
