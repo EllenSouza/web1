@@ -99,12 +99,13 @@ explanation("Adding Evil Minions","Click on the button to add Evil Minions to th
 let button = document.createElement("button")
 button.setAttribute("id", "addMinions")
 button.textContent = "Add Minion"
-button.setAttribute("onclick", "addImg()")
+button.setAttribute("onclick", "addEvilImg()")
 button.style.height = "3em"
 button.style.width = "10em"
-button.style.backgroundColor = "#467fa8"
-button.style.color = "white"
-button.style.borderRadius ="15%"
+button.style.backgroundColor = "#467fa8" //blue 
+button.style.color = "#ffd763" //yellow
+button.style.fontWeight = "bold"
+button.style.borderRadius ="7%"
 
 
 body.appendChild(button)
@@ -126,7 +127,7 @@ var evilMinions = [
     }
 ]
 var cont=0;
-function addImg (){
+function addEvilImg (){
     let minionImage = document.createElement("img")
     // one of 3 options 
     let randomNum = Math.floor(Math.random() * 3); //0,1,2
