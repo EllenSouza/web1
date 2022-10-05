@@ -125,7 +125,7 @@ function addImg (){
     sectionImgEvilMinions.appendChild(minionImage)
 
     minionImage.onclick = function(){
-        minionImage.style.display = "none"
+        minionImage.remove()
     }
 
 }
