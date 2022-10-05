@@ -102,6 +102,10 @@ button.textContent = "Add Minion"
 button.setAttribute("onclick", "addImg()")
 button.style.height = "3em"
 button.style.width = "10em"
+button.style.backgroundColor = "#467fa8"
+button.style.color = "white"
+button.style.borderRadius ="15%"
+
 
 body.appendChild(button)
 
@@ -110,11 +114,26 @@ sectionImgEvilMinions.id = "imgEvilMinions"
 
 body.appendChild(sectionImgEvilMinions)
 
+var evilMinions = [
+    {
+        id: "evil-minion1", pathImg: "../dom/img/evil-minions.jpg"
+    },
+    {
+        id: "evil-minion2", pathImg: "../dom/img/evil-minion2.jpg"
+    },
+    {
+        id: "evil-minion3", pathImg: "../dom/img/evil-minion3.jpg"
+    }
+]
 var cont=0;
 function addImg (){
     let minionImage = document.createElement("img")
-    minionImage.setAttribute("src", "../dom/img/evil-minions.jpg")
-    minionImage.setAttribute("alt" , "evil-minion")
+    // one of 3 options 
+    let randomNum = Math.floor(Math.random() * 3); //0,1,2
+    
+    minionImage.setAttribute("src", evilMinions[randomNum].pathImg)
+    
+    minionImage.setAttribute("alt" , evilMinions[randomNum].id)
     styleImg(minionImage)
     minionImage.style.marginRight = "2.5em"
     minionImage.style.marginTop = "2.5em"
