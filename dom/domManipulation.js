@@ -43,7 +43,7 @@ function styleImg (img){
 //array of minions
 var minions = [
     {
-        id:"stuart", pathImg: "../dom/img/stuart.jpeg", image: null
+        id:"dave", pathImg: "../dom/img/dave.jpeg", image: null
     },
     {
         id:"otto", pathImg: "../dom/img/otto.jpeg", image: null
