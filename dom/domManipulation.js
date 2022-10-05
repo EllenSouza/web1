@@ -120,7 +120,7 @@ var evilMinions = [
         id: "evil-minion1", pathImg: "../dom/img/evil-minions.jpg"
     },
     {
-        id: "evil-minion2", pathImg: "../dom/img/evil-minion2.jpg"
+        id: "evil-minion2", pathImg: "../dom/img/evil-minion2-removebg-preview.png"
     },
     {
         id: "evil-minion3", pathImg: "../dom/img/evil-minion3.jpg"
